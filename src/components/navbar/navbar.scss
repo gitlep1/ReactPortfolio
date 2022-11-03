@@ -1,0 +1,27 @@
+#navbarSection {
+  background-color: #3f3f3f;
+  background-image: linear-gradient(rgba(4, 3, 30, 0.7), rgba(4, 3, 30, 0.7));
+
+  #portfolioTitle {
+    color: aliceblue;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+  }
+
+  #navLinks {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+
+    li {
+      color: orange;
+      font-size: 20px;
+      margin: 1em;
+
+      &:hover {
+        color: orangered;
+      }
+    }
+  }
+}
