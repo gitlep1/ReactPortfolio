@@ -1,0 +1,13 @@
+.mainSectionDark {
+  background-color: black;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  color: white;
+}
+
+.mainSectionLight {
+  background-color: white;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+  color: black;
+}

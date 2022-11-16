@@ -1,0 +1,63 @@
+.landingSectionShow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: landingAppears 5s linear;
+  @keyframes landingAppears {
+    0% {
+      opacity: 0%;
+      animation: opacity 5s;
+    }
+    100% {
+      opacity: 100%;
+      animation: opacity 5s;
+    }
+  }
+
+  #myImg {
+    width: 300px;
+    text-align: center;
+  }
+}
+
+.homeSectionDark {
+  color: white;
+}
+
+.homeSectionLight {
+  color: black;
+}
+
+.landingSectionHide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin-top: 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: landingDisappears 5s linear;
+  @keyframes landingDisappears {
+    0% {
+      opacity: 100%;
+      animation: opacity 5s;
+    }
+    100% {
+      opacity: 0%;
+      animation: opacity 5s;
+    }
+  }
+
+  #myImg {
+    width: 300px;
+    text-align: center;
+  }
+}

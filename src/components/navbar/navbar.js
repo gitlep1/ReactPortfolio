@@ -1,16 +1,41 @@
 import "./navbar.scss";
+import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
-const Navbar = () => {
+const Navbar = ({ colorModes, darkmode, setDarkmode }) => {
   return (
-    <header id="navbarSection">
-      <h1 id="portfolioTitle">Portfolio</h1>
+    <>
+      <header
+        className={
+          darkmode ? ` mainNavbar navbarDark` : ` mainNavbar navbarLight`
+        }
+      >
+        <Button
+          variant="secondary"
+          onClick={() => {
+            setDarkmode(!darkmode);
+          }}
+        >
+          {darkmode ? "☀️" : "🌙"}
+        </Button>
 
-      <ul id="navLinks">
-        <li>Home</li>
-        <li>Projects</li>
-        <li></li>
-      </ul>
-    </header>
+        <h1 id="portfolioTitle">Portfolio</h1>
+
+        <ul id="navLinks">
+          <Button variant={colorModes()}>
+            <Link to="/">
+              <li>Home</li>
+            </Link>
+          </Button>
+
+          <Button variant={colorModes()}>
+            <Link to="/Projects">
+              <li>Projects</li>
+            </Link>
+          </Button>
+        </ul>
+      </header>
+    </>
   );
 };
 
